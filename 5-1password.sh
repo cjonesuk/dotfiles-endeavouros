@@ -8,32 +8,17 @@
 #-------------------------------------------------------------------------
 
 echo
-echo "INSTALLING AUR SOFTWARE"
+echo "INSTALLING 1PASSWORD"
 echo
 
+cd "${HOME}"
 
-PKGS=(
+curl -sS https://downloads.1password.com/linux/keys/1password.asc | gpg --import
 
-    # TERMINALS
+git clone https://aur.archlinux.org/1password.git
 
-    'alacritty'
-
-    # DEVELOPMENT
-
-    'stow'
-
-    # APPS ----------------------------------------------------------------
-
-    'discord'                       # Chat for gamers
-
-)
-
-# Change default shell
-chsh -s $(which zsh)
-
-for PKG in "${PKGS[@]}"; do
-    yay -S --noconfirm $PKG
-done
+cd 1password
+makepkg -si
 
 echo
 echo "Done!"
