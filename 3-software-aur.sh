@@ -20,6 +20,7 @@ PKGS=(
 
     # UTILITIES
 
+    'appimagelauncher'              # AppImage integration
     'android-tools'
     'neovim'
     'perl-image-exiftool'
