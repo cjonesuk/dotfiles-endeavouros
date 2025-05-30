@@ -26,9 +26,7 @@ PKGS=(
     'file-roller'              # Archive utility
     'gtop'                    # System monitoring via terminal
     'gufw'                    # Firewall manager
-    'hardinfo'                # Hardware info app
     'htop'                    # Process viewer
-    'neofetch'                # Shows system info when you launch terminal
     'ntp'                     # Network Time Protocol to set time via network.
     'numlockx'                # Turns on numlock in X11
     'p7zip'                   # 7z compression program
@@ -72,8 +70,6 @@ PKGS=(
 
     # PRODUCTIVITY --------------------------------------------------------
 
-    'hunspell'              # Spellcheck libraries
-    'hunspell-en'           # English spellcheck library
     'xpdf'                  # PDF viewer
 
 )

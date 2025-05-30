@@ -14,12 +14,6 @@ echo
 echo "Please enter username:"
 read username
 
-cd "${HOME}"
-
-echo "CLONING: YAY"
-git clone "https://aur.archlinux.org/yay.git"
-
-
 PKGS=(
 
 
@@ -28,9 +22,6 @@ PKGS=(
     'discord'                       # Chat for gamers
 
 )
-
-cd ${HOME}/yay
-makepkg -si
 
 # Change default shell
 chsh -s $(which zsh)
