@@ -34,7 +34,7 @@ check() {
 }
 
 depends() {
-    echo rootfs-block bash
+    echo rootfs-block bash grep
     exit 0
 }
 
@@ -45,22 +45,30 @@ EOF
 
 # immutable.sh
 sudo tee "$MODULE_DIR/immutable.sh" > /dev/null <<'EOF'
-#!/bin/sh
-
-if ! getarg boot=immutable > /dev/null; then
-    echo "[immutable] boot=immutable not found, skipping overlay setup"
+# Check if ' boot=immutable' exists in /proc/cmdline
+# Use 'grep -q' which exits 0 on match, 1 on no match
+if ! grep -q " boot=immutable" /proc/cmdline; then
+    echo "[immutable] boot=immutable not found in /proc/cmdline, skipping overlay setup"
     return 0
 fi
 
 echo "[immutable] Activating tmpfs overlay for /var, /tmp, and /var/log..."
 
+# Ensure the /overlay mount point exists
 mountpoint -q /overlay || mount -t tmpfs tmpfs /overlay
 
 for dir in var tmp var/log; do
+    # Ensure directories exist within the tmpfs overlay
     mkdir -p /overlay/${dir}/upper /overlay/${dir}/work /overlay/${dir}/merged
+    # Mount the overlay filesystem
+    # The original /${dir} directory is the lowerdir, implicitly read-only
     mount -t overlay overlay -o lowerdir=/${dir},upperdir=/overlay/${dir}/upper,workdir=/overlay/${dir}/work /overlay/${dir}/merged
+    # Bind mount the merged overlay onto the original directory
     mount --bind /overlay/${dir}/merged /${dir}
+    echo "[immutable] Mounted overlay on /${dir}"
 done
+
+echo "[immutable] Overlay setup complete."
 EOF
 
 # Make scripts executable
@@ -71,7 +79,7 @@ echo "✅ Immutable dracut module created."
 
 
 echo "📦 To apply, run:"
-echo "    sudo dracut --force --regenerate-all"
+echo "    sudo dracut-rebuild"
 
 echo
 echo "Done!"
