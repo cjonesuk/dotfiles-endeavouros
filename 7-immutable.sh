@@ -34,7 +34,7 @@ check() {
 }
 
 depends() {
-    echo rootfs-block
+    echo rootfs-block bash
     exit 0
 }
 
