@@ -21,6 +21,9 @@ git config --global user.name $name
 git config --global user.email $email
 git config --global init.defaultBranch main
 
+echo "Github Auth Login"
+
+gh auth login
 
 echo
 echo "Done!"

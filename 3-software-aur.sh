@@ -18,13 +18,19 @@ PKGS=(
 
     'alacritty'
 
-    # DEVELOPMENT
+    # UTILITIES
 
+    'android-tools'
+    'neovim'
+    'perl-image-exiftool'
     'stow'
 
     # APPS ----------------------------------------------------------------
 
     'discord'                       # Chat for gamers
+    'obsidian'                      # Markdown knowledgebase
+    'obs-studio'                    # Streaming
+
 
 )
 

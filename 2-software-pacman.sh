@@ -23,10 +23,12 @@ PKGS=(
     'cmatrix'                 # The Matrix screen animation
     'cronie'                  # cron jobs
     'curl'                    # Remote content retrieval
-    'file-roller'              # Archive utility
+    'file-roller'             # Archive utility
+    'github-cli'              # GitHub CLI
     'gtop'                    # System monitoring via terminal
     'gufw'                    # Firewall manager
     'htop'                    # Process viewer
+    'lazygit'                 # Lazygit
     'ntp'                     # Network Time Protocol to set time via network.
     'numlockx'                # Turns on numlock in X11
     'p7zip'                   # 7z compression program
@@ -34,6 +36,7 @@ PKGS=(
     'speedtest-cli'           # Internet speed via terminal
     'unrar'                   # RAR compression program
     'unzip'                   # Zip compression program
+    'veracrypt'               # Encryption program
     'yay'                     # AUR manager
     'wget'                    # Remote content retrieval
     'vim'                     # Terminal Editor
@@ -65,8 +68,9 @@ PKGS=(
 
     # MEDIA ---------------------------------------------------------------
 
-    'celluloid'             # Video player
-    'feh'                   # Image viewer
+    'celluloid'                 # Video player
+    'feh'                       # Image viewer
+    'v4l2loopback-dkms'         # Virtual capture
 
     # PRODUCTIVITY --------------------------------------------------------
 
