@@ -13,10 +13,6 @@ echo
 
 PKGS=(
 
-    # SYSTEM --------------------------------------------------------------
-
-    'linux-lts'             # Long term support kernel
-
     # TERMINAL UTILITIES --------------------------------------------------
 
     'bleachbit'               # File deletion utility
