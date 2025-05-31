@@ -21,6 +21,7 @@ PKGS=(
     'curl'                    # Remote content retrieval
     'file-roller'             # Archive utility
     'github-cli'              # GitHub CLI
+    'grub-btrfs'              # GRUB BTRFS snapshots
     'gtop'                    # System monitoring via terminal
     'gufw'                    # Firewall manager
     'htop'                    # Process viewer
@@ -44,7 +45,6 @@ PKGS=(
 
     # GENERAL UTILITIES ---------------------------------------------------
 
-    'timeshift'                 # Backup and Restore
     'variety'               # Wallpaper changer
 
     # DEVELOPMENT ---------------------------------------------------------

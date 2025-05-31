@@ -14,6 +14,11 @@ echo
 
 PKGS=(
 
+    # SYSTEM
+
+    'btrfs-assistant'
+    'snapper-support'
+
     # TERMINALS
 
     'alacritty'
