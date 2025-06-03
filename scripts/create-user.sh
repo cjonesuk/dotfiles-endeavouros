@@ -84,6 +84,7 @@ else
 fi
 
 
+echo "Adding user to datasharers"
 sudo usermod -aG datasharers $username
 
 echo "--- User '$username' creation complete ---"
