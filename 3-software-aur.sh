@@ -36,6 +36,7 @@ PKGS=(
     'discord'                       # Chat for gamers
     'obsidian'                      # Markdown knowledgebase
     'obs-studio'                    # Streaming
+    'gimp'                          # Image editor
 
 
 )
