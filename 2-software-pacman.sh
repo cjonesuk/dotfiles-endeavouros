@@ -51,7 +51,6 @@ PKGS=(
 
     'clang'                 # C Lang compiler
     'cmake'                 # Cross-platform open-source make system
-    'code'                  # Visual Studio Code
     'electron'              # Cross-platform development using Javascript
     'git'                   # Version control system
     'gcc'                   # C/C++ compiler

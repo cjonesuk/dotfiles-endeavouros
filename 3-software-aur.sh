@@ -14,30 +14,26 @@ echo
 
 PKGS=(
 
-    # SYSTEM
-
+    # SYSTEM --------------------------------------------------------------
     'btrfs-assistant'
     'snapper-support'
+    'appimagelauncher'              # AppImage integration
 
-    # TERMINALS
-
+    # TERMINALS -----------------------------------------------------------
     'alacritty'
 
-    # UTILITIES
-
-    'appimagelauncher'              # AppImage integration
+    # TOOLS AND UTILITIES -------------------------------------------------
     'android-tools'
     'neovim'
     'perl-image-exiftool'
     'stow'
 
     # APPS ----------------------------------------------------------------
-
     'discord'                       # Chat for gamers
+    'gimp'                          # Image editor
     'obsidian'                      # Markdown knowledgebase
     'obs-studio'                    # Streaming
-    'gimp'                          # Image editor
-
+    'visual-studio-code-bin'        # Non-free visual studio code
 
 )
 
