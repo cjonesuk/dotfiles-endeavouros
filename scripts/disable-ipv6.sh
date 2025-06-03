@@ -7,10 +7,6 @@
 #  Arch Linux Post Install Setup and Config
 #-------------------------------------------------------------------------
 
-echo
-echo "CONFIGURING NETWORK"
-echo
-
 echo "Disabling IPv6 on all interfaces..."
 
 # Get list of interfaces from sysctl
@@ -36,7 +32,3 @@ done
 sudo sysctl --system
 
 echo "IPv6 disabled on all interfaces."
-
-echo
-echo "Done!"
-echo
