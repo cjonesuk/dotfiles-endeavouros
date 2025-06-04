@@ -32,7 +32,7 @@ PKGS=(
     'discord'                       # Chat for gamers
     'gimp'                          # Image editor
     'obsidian'                      # Markdown knowledgebase
-    'obs-studio'                    # Streaming
+    'obs-studio-git'                # Streaming
     'visual-studio-code-bin'        # Non-free visual studio code
 
 )
