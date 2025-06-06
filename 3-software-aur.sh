@@ -18,6 +18,7 @@ PKGS=(
     'btrfs-assistant'
     'snapper-support'
     'appimagelauncher'              # AppImage integration
+    'jre-openjdk'
 
     # TERMINALS -----------------------------------------------------------
     'alacritty'
