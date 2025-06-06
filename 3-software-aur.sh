@@ -19,12 +19,16 @@ PKGS=(
     'snapper-support'
     'appimagelauncher'              # AppImage integration
     'jre-openjdk'
+    'dotnet-runtime'
+    'dotnet-sdk'
+    'aspnet-runtime'
 
     # TERMINALS -----------------------------------------------------------
     'alacritty'
 
     # TOOLS AND UTILITIES -------------------------------------------------
     'android-tools'
+    'balena-etcher-bin'
     'neovim'
     'perl-image-exiftool'
     'stow'

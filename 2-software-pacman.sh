@@ -19,6 +19,7 @@ PKGS=(
     'cmatrix'                 # The Matrix screen animation
     'cronie'                  # cron jobs
     'curl'                    # Remote content retrieval
+    'fastfetch'                # System information
     'file-roller'             # Archive utility
     'github-cli'              # GitHub CLI
     'grub-btrfs'              # GRUB BTRFS snapshots
@@ -26,6 +27,7 @@ PKGS=(
     'gufw'                    # Firewall manager
     'htop'                    # Process viewer
     'lazygit'                 # Lazygit
+
     'ntp'                     # Network Time Protocol to set time via network.
     'numlockx'                # Turns on numlock in X11
     'p7zip'                   # 7z compression program
