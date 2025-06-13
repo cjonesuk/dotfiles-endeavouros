@@ -15,6 +15,7 @@ PKGS=(
 
     # TERMINAL UTILITIES --------------------------------------------------
 
+    'bc'
     'bleachbit'               # File deletion utility
     'cmatrix'                 # The Matrix screen animation
     'cronie'                  # cron jobs
@@ -26,6 +27,7 @@ PKGS=(
     'gtop'                    # System monitoring via terminal
     'gufw'                    # Firewall manager
     'htop'                    # Process viewer
+    'imagemagick'
     'lazygit'                 # Lazygit
 
     'ntp'                     # Network Time Protocol to set time via network.
