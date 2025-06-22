@@ -39,6 +39,7 @@ PKGS=(
     'obsidian'                      # Markdown knowledgebase
     'obs-studio-git'                # Streaming
     'visual-studio-code-bin'        # Non-free visual studio code
+    'chromium'
 
 )
 
