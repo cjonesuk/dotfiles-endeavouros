@@ -31,7 +31,8 @@ PKGS=(
     'balena-etcher-bin'
     'neovim'
     'perl-image-exiftool'
-    'stow'
+    'stow'                          # GNU Stow
+    'getnf'                         # Nerd font utility
 
     # APPS ----------------------------------------------------------------
     'discord'                       # Chat for gamers

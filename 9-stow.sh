@@ -14,6 +14,9 @@ echo
 echo "Applying zsh"
 stow zsh
 
+echo "Applying alacritty"
+stow alacritty
+
 
 echo
 echo "Done!"

@@ -11,6 +11,7 @@ echo
 echo "TERMINAL SETUP"
 echo
 
+./scripts/install-nerd-fonts.sh
 ./scripts/install-oh-my-zsh.sh
 
 echo
