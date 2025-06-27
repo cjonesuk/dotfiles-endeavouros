@@ -13,4 +13,5 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
