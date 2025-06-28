@@ -72,6 +72,7 @@ PKGS=(
     'v4l2loopback-dkms'         # Virtual capture
     'lib32-nvidia-utils'        # lib32-vulkan-driver provider required by steam
     'steam'                     # Steam
+    'spotify-launcher'          # Per user installation allowing for automatic updates
 
     # PRODUCTIVITY --------------------------------------------------------
 
