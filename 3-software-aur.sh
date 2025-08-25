@@ -33,6 +33,7 @@ PKGS=(
     'perl-image-exiftool'
     'stow'                          # GNU Stow
     'getnf'                         # Nerd font utility
+    'miniconda3'                    # Miniconda (conda) python environment
 
     # APPS ----------------------------------------------------------------
     'discord'                       # Chat for gamers
