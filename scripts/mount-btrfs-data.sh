@@ -1,9 +1,32 @@
 #!/bin/bash
 
-echo "Creating target directory"
-sudo mkdir -p /mnt/btrfs-data
+SUBVOLUME_PATH="/dev/mapper/luks-0c2fecb7-325c-4ebf-abb4-9d1a2198979b"
+SUBVOLUME_NAME="@data"
+MOUNT_POINT="/mnt/btrfs-data"
+GROUP_NAME="devs"
 
-echo "Mounting @data subvolume"
-sudo mount -o subvol=@data /dev/mapper/luks-0c2fecb7-325c-4ebf-abb4-9d1a2198979b /mnt/btrfs-data
+# 1. Create the mount point directory if it doesn't exist
+if [ ! -d "$MOUNT_POINT" ]; then
+    echo "Creating mount point directory: $MOUNT_POINT"
+    sudo mkdir -p "$MOUNT_POINT"
+fi
 
-echo "Done"
+# 2. Mount the Btrfs subvolume
+echo "Mounting Btrfs subvolume '$SUBVOLUME_NAME' to '$MOUNT_POINT'"
+sudo mount -o subvol="$SUBVOLUME_NAME" "$SUBVOLUME_PATH" "$MOUNT_POINT"
+
+# 3. Check if mount was successful
+if [ $? -eq 0 ]; then
+    echo "Subvolume mounted successfully."
+
+    # 4. Apply permissions and ownership to the *mounted subvolume root*
+    echo "Setting ownership and permissions for $MOUNT_POINT"
+    sudo chown root:"$GROUP_NAME" "$MOUNT_POINT"
+    sudo chmod 2770 "$MOUNT_POINT"
+
+    # Verify
+    ls -ld "$MOUNT_POINT"
+else
+    echo "Error mounting subvolume!"
+    exit 1
+fi

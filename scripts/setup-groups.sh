@@ -1,5 +1,5 @@
 #!/bin/bash
 
 
-sudo groupadd admindata
-sudo usermod -aG admindata chris
+sudo groupadd devs
+sudo usermod -aG devs chris
