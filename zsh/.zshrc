@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
-
+ 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -74,6 +74,12 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+
+
+# Alias to add btrfs snapshot entries into grub boot menu
+alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -104,7 +110,3 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
-
-
-alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
