@@ -1,8 +1,8 @@
 #!/bin/bash
 
 SUBVOLUME_PATH="/dev/mapper/luks-0c2fecb7-325c-4ebf-abb4-9d1a2198979b"
-SUBVOLUME_NAME="@data"
-MOUNT_POINT="/mnt/btrfs-data"
+SUBVOLUME_NAME="@data-ai"
+MOUNT_POINT="/mnt/data-ai"
 GROUP_NAME="devs"
 
 # 1. Create the mount point directory if it doesn't exist
@@ -26,6 +26,8 @@ if [ $? -eq 0 ]; then
 
     # Verify
     ls -ld "$MOUNT_POINT"
+
+    echo "Done"
 else
     echo "Error mounting subvolume!"
     exit 1
