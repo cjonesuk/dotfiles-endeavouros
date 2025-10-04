@@ -16,6 +16,8 @@ PKGS=(
     # TERMINAL UTILITIES --------------------------------------------------
 
     'bc'
+    'bluez'                   # Bluetooth
+    'bluez-utils'             # Bluetooth utilities
     'bleachbit'               # File deletion utility
     'cmatrix'                 # The Matrix screen animation
     'cronie'                  # cron jobs
@@ -55,6 +57,8 @@ PKGS=(
 
     'clang'                 # C Lang compiler
     'cmake'                 # Cross-platform open-source make system
+    'docker'                # Docker engine
+    'docker-compose'        # Docker compose cli tool
     'electron'              # Cross-platform development using Javascript
     'git'                   # Version control system
     'gcc'                   # C/C++ compiler
@@ -64,6 +68,7 @@ PKGS=(
     'npm'                   # Node package manager
     'python'                # Scripting language
     'yarn'                  # Dependency management (Hyper needs this)
+    'opam'                  # Ocaml package manager
 
     # MEDIA ---------------------------------------------------------------
 
@@ -73,6 +78,7 @@ PKGS=(
     'lib32-nvidia-utils'        # lib32-vulkan-driver provider required by steam
     'steam'                     # Steam
     'spotify-launcher'          # Per user installation allowing for automatic updates
+    'audacity'
 
     # PRODUCTIVITY --------------------------------------------------------
 
