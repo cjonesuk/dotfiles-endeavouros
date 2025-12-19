@@ -29,7 +29,6 @@ PKGS=(
     # TOOLS AND UTILITIES -------------------------------------------------
     'android-tools'
     'balena-etcher-bin'
-    'neovim'
     'perl-image-exiftool'
     'stow'                          # GNU Stow
     'getnf'                         # Nerd font utility

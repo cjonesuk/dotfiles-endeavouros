@@ -13,6 +13,10 @@ echo
 
 PKGS=(
 
+    # SYSTEM UTILITIES   --------------------------------------------------
+
+    'extra/solaar'            # Logitech device manager
+
     # TERMINAL UTILITIES --------------------------------------------------
 
     'bc'
@@ -32,6 +36,8 @@ PKGS=(
     'imagemagick'
     'lazygit'                 # Lazygit
 
+    'neovim'                  # Neovim
+    'wl-clipboard'            # Wayland system clipboard support for neovim
     'ntp'                     # Network Time Protocol to set time via network.
     'numlockx'                # Turns on numlock in X11
     'p7zip'                   # 7z compression program

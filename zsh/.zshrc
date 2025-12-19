@@ -79,6 +79,10 @@ source $ZSH/oh-my-zsh.sh
 
 # Alias to add btrfs snapshot entries into grub boot menu
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+ 
+# Replace <switch> with your desired opam switch name, e.g. "default" or "4.14.0"
+# Example: use-ocaml 4.14.0
+alias use-ocaml="eval \$(opam env --switch default)"
 
 # User configuration
 
