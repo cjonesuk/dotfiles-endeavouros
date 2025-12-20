@@ -7,8 +7,8 @@
 #  Arch Linux Post Install Setup and Config
 #-------------------------------------------------------------------------
 
-echo "Disabling sleep, hibernate and hybrid hibernate modes"
+echo "Disabling hibernate and hybrid hibernate modes"
 
-sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+sudo systemctl mask hibernate.target hybrid-sleep.target
 
-echo "Sleep modes disabled."
+echo "Hibernate modes disabled."
