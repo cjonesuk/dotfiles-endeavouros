@@ -114,3 +114,4 @@ alias use-ocaml="eval \$(opam env --switch default)"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
+export PATH="$HOME/.local/bin:$PATH"
